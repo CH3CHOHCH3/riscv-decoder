@@ -4,6 +4,11 @@
 
 这个由 Qt6.2 开发的软件能帮助我们把一条 32 位的十六进制机器码根据 opcode 合理地拆分各个字段。
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/72899584/163538153-204c97ff-7069-441d-8445-d0bbff852c14.png" />
+  <p>使用截图</p>
+</div>
+
 目前已经支持的指令包括 `RV32I Base Instruction Set`(除去 `FENCE`，`ECALL`，`EBREAK`)，`RV64I Base Instruction Set`和各自的standard extension（可在<a href="https://five-embeddev.com/riscv-isa-manual/latest/instr-table.html">此表</a>中对照），暂不支持 16 位压缩指令。
 
 riscv64-linux-gnu-gcc 的 `-c` 指令会默认生成带压缩指令的机器码，可以使用如下编译指令使产生的`test.o`目标模块文件中`.text`代码段中只含32位指令：
