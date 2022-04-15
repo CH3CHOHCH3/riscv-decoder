@@ -14,8 +14,10 @@ riscv64-linux-gnu-gcc -c -march=rv64g test.s
 
 ## 注意
 
-1. 本软件并不能由机器码指令输出对应的汇编指令，这样设计是考虑到 objdump 已经完成了这一工作，因此，本软件应配合 objdump 使用。
++ release 中打包了经过编译、开箱即用的软件，如果没有 Qt 环境可以自取。
 
-2. 软件中 RV32I 和 RV64I 的主要区别在于，在 RV32I 中，`SLLI`，`SRLI`，`SRAI` 的 `shamt` 字段占 5 位，而在 RV64I 中占 6 位。具体数据可参阅<a href="https://five-embeddev.com/riscv-isa-manual/latest/instr-table.html">这里</a>
++ 本软件并不能由机器码指令输出对应的汇编指令，这样设计是考虑到 objdump 已经完成了这一工作，因此，本软件应配合 objdump 使用。
 
-3. 如果您发现了错误，请在 Issues 中告知我，十分感谢；也欢迎您提交 pr 来丰富本软件的功能，或使其支持其他指令集。
++ 软件中 RV32I 和 RV64I 的主要区别在于，在 RV32I 中，`SLLI`，`SRLI`，`SRAI` 的 `shamt` 字段占 5 位，而在 RV64I 中占 6 位。具体数据可参阅<a href="https://five-embeddev.com/riscv-isa-manual/latest/instr-table.html">这里</a>
+
++ 如果您发现了错误，请在 Issues 中告知我，十分感谢；也欢迎您提交 pr 来丰富本软件的功能，或使其支持其他指令集。
