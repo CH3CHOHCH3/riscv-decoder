@@ -44,7 +44,7 @@ bit-level representation:
 python3 decoder.py my_objdump.s > my_decoder.s
 ```
 
-此时`my_decoder.s`文件中的文本，即如上述示例，已经插入了`bit-level representation`和各字段分解的表格。
+此时`my_decoder.s`文件中的文本，即如上述示例，已经插入了机器指令的二进制表示，以及各字段分解的表格。
 
 ---
 
